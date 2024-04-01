@@ -3,16 +3,476 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Myke Robert Mañalac</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script defer src="./index.js"></script>
+
   </head>
   <body>
-    <div id="container">
-        <header>HELLO WORL</header>
-        <button id="button">click me</button>
-        <div id="message"></div>
+    <div id="outer-container">
+      <div id="section-menu" class="section">
+        <div class="menu-item">
+          <a href="#about-me">About Me</a>
+        </div>
+        <div class="menu-item">
+          <a href="#skills">Skills</a>
+        </div>
+        <div class="menu-item">
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="menu-item">
+          <a href="#contact-me">Contact Me</a>
+        </div>
+      </div>
+
+      <div id="section-name" class="section with-bottom-shadow">
+        <div id="info" class="inner-section">
+          <span>i'm</span> <span id="name">Myke Robert Mañalac</span>
+          <br>
+          <span id="title">a Full Stack Developer</span>
+          <a id="download-link"  href="./assets/files/Myke Robert Mañalac.pdf" download="Myke Robert Mañalac.pdf">
+          </a>
+          <div id="download-resume" class="btn-type" >
+            <span class="material-symbols-outlined">
+              download
+            </span>
+            Download my Resume
+          </div>
+        </div>
+        <div id="image-container" class="inner-section">
+          <img id="myImage" src="./assets/images/myke.png" alt="myke">
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <div class="divider-left"></div>
+        <div class="divider-center">
+          <span class="material-symbols-outlined divider-icon">
+            emoji_events
+            </span>
+        </div>
+        <div class="divider-right"></div>
+      </div>
+      <div id="about-me" class="section">
+        <header>About Me</header>
+        <div class="inner-section full-width hidden fromLeft">
+          Highly motivated and detail-oriented web developer with 2 years of experience in developing full stack applications.
+        </div>
+        <div class="inner-section full-width hidden fromLeft">
+          <header>Work Experience</header>
+        </div>
+        <div class="inner-section full-width" id="work-history">
+          <div class="work-container hidden fromRight delay1">
+            <div class="arrow">2022</div>
+            <div class="work-icons-container">
+              <div class="circle-icon"></div>
+              <div class="line-icon"></div>
+            </div>
+            <div class="work-inner-container highlight">
+              <header class="work-title">Web Developer</header>
+              <p class="work-company">Computer Professionals Inc., San Juan , Metro Manila</p>
+              <div class="work-desc">
+                <ul>
+                  <li>Perform Development and Code maintenance while applying best practices in different tasks from user experience to backend code.</li>
+                  <li>Complete bug fixes and investigate and support complex production issues.</li>
+                  <li>Develop new or upgrade REST APIs as per client requirements including database connection, error handling and proper logging.</li>
+                  <li>API Development using Java Spring Boot or AWS Lambda Serverless functions.</li>
+                  <li>Perform Testing using Postman.</li>
+                  <li>Develop Web pages using Angular, Bootstrap, Javascript, jQuery. Frontend duties includes API integration, JWT implementation, UI development and Input validations.</li>
+                  <li>Work with other members in handling Project Enhancements or urgent issues, provide deliverables within target dates.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-section full-width">
+          <div class="work-container hidden fromRight delay2">
+            <div class="arrow">2015</div>
+            <div class="work-icons-container">
+              <div class="circle-icon"></div>
+              <div class="line-icon"></div>
+            </div>
+            <div class="work-inner-container">
+              <header class="work-title">Manufacturing Quality Specialist</header>
+              <p class="work-company">SFA Semicon, Clark , Pampanga</p>
+              <div class="work-desc">
+                <ul>
+                  <li>Leads handling of Quality Issues, Customer Feedbacks and Complaints.</li>
+                  <li>Conduct Root cause analysis and resolutions to customer returns and complaints.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-section full-width">
+          <div class="work-container hidden fromRight delay3">
+            <div class="arrow">2015</div>
+            <div class="work-icons-container">
+              <div class="circle-icon"></div>
+              <div class="line-icon"></div>
+            </div>
+            <div class="work-inner-container">
+              <header class="work-title">Manufacturing Quality Engineer</header>
+              <p class="work-company">PTON Corp. , Gen. Trias , Cavite</p>
+              <div class="work-desc">
+                <ul>
+                  <li>Quality Checking of Incoming Raw Materials and giving feedback to Supplier for any concerns.</li>
+                  <li>Perform Process Investigation during Machine Trouble.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <div class="divider-left"></div>
+        <div class="divider-center">
+          <span class="material-symbols-outlined divider-icon">
+            skillet
+            </span>
+        </div>
+        <div class="divider-right"></div>
+      </div>
+      <div id="skills" class="section relevant">
+        <header>My Skills</header>
+        <div id="skills-container">
+          <div class="skills-row">
+            <div class="skill-item hidden roll-stag">
+              <img src="./assets/images/icons/java.png">
+              Java
+            </div>
+            <div class="skill-item hidden roll-stag delay1">
+              <img src="./assets/images/icons/spring.png">
+              Spring Boot
+            </div>
+            <div class="skill-item hidden roll-stag delay2">
+              <img src="./assets/images/icons/mysql.png">
+              MySQL
+            </div>
+            <div class="skill-item hidden roll-stag delay3">
+              <img src="./assets/images/icons/mybatis.png">
+              iBatis
+            </div>
+          </div>
+          <div class="skills-row">
+            <div class="skill-item hidden roll-stag">
+              <img src="./assets/images/icons/htmlcss.png">
+              HTML & CSS
+            </div>
+            <div class="skill-item hidden roll-stag delay1">
+              <img src="./assets/images/icons/javascript.png">
+              Javascript
+            </div>
+            <div class="skill-item hidden roll-stag delay2">
+              <img src="./assets/images/icons/angular.png">
+              Angular2
+            </div>
+            <div class="skill-item hidden roll-stag delay3">
+              <img src="./assets/images/icons/git.png">
+              GIT
+            </div>
+          </div>
+          <div class="skills-row">
+            <div class="skill-item hidden roll-stag">
+              <img src="./assets/images/icons/nodejs.png">
+              nodejs
+
+            </div>
+            <div class="skill-item hidden roll-stag delay1">
+              <img src="./assets/images/icons/aws.png">
+              AWS
+            </div>
+            <div class="skill-item hidden roll-stag delay2">
+              <img src="./assets/images/icons/api.png">
+              REST API
+            </div>
+            <div class="skill-item hidden roll-stag delay3">
+              <img src="./assets/images/icons/postman.png">
+              Postman
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <div class="divider-left"></div>
+        <div class="divider-center">
+          <span class="material-symbols-outlined divider-icon">
+            fitness_center
+            </span>
+        </div>
+        <div class="divider-right"></div>
+      </div>
+      <div id="projects" class="section relevant">
+        <header>Projects</header>
+        <div id="project-explanation">
+          These are some personal projects I made for practice and to showcase some of my web development skills.
+        </div>
+        <div class="project-item">
+          <header>TheBlog - A personal project</header>
+          <div class="project-details-container">
+            <div class="accordion-top">
+              <div class="init-details">
+                <div class="init-details-img">
+                  <img src="./assets/images/portfolio/blog/1.webp" alt="proj1">
+                </div>
+                <div class="init-details-text">
+                  "Explore a diverse range of topics, from travel adventures to health tips, fashion trends to tech innovations. Join us on a journey of discovery and inspiration, where every post is a window into new perspectives and exciting ideas. Whether you're seeking practical advice or simply a good read, our blog has something for everyone."
+                </div>
+                <div class="init-techs-used">
+                  This is a demo Blog Website built using <span>Angular</span>, <span>Nodejs</span> and <span>MySQL</span>. Deployed on <span>AWS</span> using serverless framework.
+                </div>
+              </div>
+              <div id="project1-accordion-toggle" class="accordion-toggle">
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </div>
+            <div class="accordion-bottom blog">
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/blog/2.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Authorization and Authentication using JWT.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/blog/4.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Text editor with image upload and different text format options.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/blog/3.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Search function with filter, search and pagination.</p>
+                </div>
+              </div>
+
+              <div class="project-link-container">
+                <div class="project-link btn-type" id="btn-proj1">
+                  Visit Website
+                </div>
+                <a hidden id="link-proj1" href="http://theblog.click.s3-website-ap-southeast-1.amazonaws.com/" target="_blank"></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <header>TheMusicPlayer - A personal project</header>
+          <div class="project-details-container">
+            <div class="accordion-top">
+              <div class="init-details">
+                <div class="init-details-img">
+                  <img src="./assets/images/portfolio/player/1.webp" alt="proj2">
+                </div>
+                <div class="init-details-text">
+                  "Meet our stylish music player - your ticket to seamless sound. Shuffle through tracks, and enjoy crystal-clear audio on your browser."
+                </div>
+                <div class="init-techs-used">
+                  This is a simple demo of a Browser based music player built using <span>JQuery</span>, <span>Nodejs</span> and <span>MySQL</span>. Deployed on <span>AWS</span> using serverless framework.
+                </div>
+              </div>
+              <div id="project2-accordion-toggle" class="accordion-toggle">
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </div>
+            <div class="accordion-bottom player">
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/player/1.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Simple player with basic playback controls.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/player/2.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Clicking the Playlist icon will toggle the Playlist Menu.</p>
+                </div>
+              </div>
+
+              <div class="project-link-container">
+                <div class="project-link btn-type" id="btn-proj2">
+                  Visit Website
+                </div>
+                <a hidden id="link-proj2" href="http://themusicplayer.click.s3-website-ap-southeast-1.amazonaws.com/" target="_blank"></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <header>SneakerShop - A personal project</header>
+          <div class="project-details-container">
+            <div class="accordion-top">
+              <div class="init-details">
+                <div class="init-details-img">
+                  <img src="./assets/images/portfolio/shoeshop/1.webp" alt="proj2">
+                </div>
+                <div class="init-details-text">
+                  "Explore a wide collection of trendy footwear for every occasion and every personality. Browse, click, and strut your way through our easy-to-navigate website to find the perfect pair."
+                </div>
+                <div class="init-techs-used">
+                  This is a demo ecommerce website built using <span>Angular2</span> with <span>Angular Material UI</span> for the Frontend, using <span>Firebase</span> for the backend Service ,Storage and Hosting.
+                </div>
+              </div>
+              <div id="project1-accordion-toggle" class="accordion-toggle">
+                <span class="material-symbols-outlined">
+                  keyboard_double_arrow_down
+                </span>
+              </div>
+            </div>
+            <div class="accordion-bottom shop">
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/2.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>A product page with search, filter, sorting, and pagination.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/3.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Clicking a product will show the item details with size and quantity options before adding item to your cart.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/4.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Clicking the Cart icon will show your shopping cart list with option to proceed with checkout.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/5.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>Clicking you profile name will show your current info and status of items you purchased. In the image, current status is 'Processing'</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/6.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>An admin account have additional menu for managing store orders. The admin can click 'Mark as delivered' if item is already shipped.</p>
+                </div>
+              </div>
+
+              <div class="project-desc-container">
+                <div class="project-desc-image">
+                  <img src="./assets/images/portfolio/shoeshop/7.webp">
+                </div>
+                <div class="project-desc-text">
+                  <p>The user's order ststus should also change to 'Delivered'.</p>
+                </div>
+              </div>
+
+              <div class="project-link-container">
+                <div class="project-link btn-type" id="btn-proj3">
+                  Visit Website
+                </div>
+                <a hidden id="link-proj3" href="https://angularpractice2022.firebaseapp.com/" target="_blank"></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider">
+        <div class="divider-left"></div>
+        <div class="divider-center">
+          <span class="material-symbols-outlined divider-icon">
+            contact_mail
+            </span>
+        </div>
+        <div class="divider-right"></div>
+      </div>
+      <div id="contact-me" class="section relevant">
+        <header>Contact Me</header>
+        <div id="contact-me-container">
+          <div class="contact-item hidden fromRight">
+            <div class="contact-item-icon">
+              <img src="./assets/images/icons/gmail.png">
+            </div>
+            <div class="contact-item-details">
+              <a href="mailto:mrobertmanalac@gmail.com">mrobertmanalac @ gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item hidden fromRight">
+            <div class="contact-item-icon">
+              <img src="./assets/images/icons/viber.png">
+            </div>
+            <div class="contact-item-details">
+              <p>0920-631-8891</p>
+            </div>
+          </div>
+
+          <div class="contact-item hidden fromRight">
+            <div class="contact-item-icon">
+              <img src="./assets/images/icons/linkedin.png">
+            </div>
+            <div class="contact-item-details">
+              <a href="https://www.linkedin.com/in/myke-robert-ma%C3%B1alac-6207a1168/" target="_blank" >Myke Robert Mañalac</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="footer" class="section with-bottom-shadow">
+        Thank you for viewing.
+      </div>
+
+      
     </div>
-	<script src="index.js"></script>
+    <div id="image-modal">
+      <div id="close-modal">
+        <div class="btn-type" id="close-modal-btn">
+          <span class="material-symbols-outlined">
+            close
+            </span>
+        </div>
+      </div>
+      <div id="image-modal-container">
+        <img id="selected-image" src="" alt="">
+      </div>
+    </div>
   </body>
 </html>
