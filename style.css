@@ -542,8 +542,8 @@ body{
   .section-divider{
     width: 100%;
     display: flex;
-    margin-top: 170px;
-    margin-bottom: 120px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -579,3 +579,71 @@ body{
     margin-top: 50px;
     padding-bottom: 20px;
   }
+
+@media screen and (max-width:1100px){
+  #outer-container{
+    width: 600px;
+    padding: 5px;
+  }
+
+  .section-divider{
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+
+  .work-container{
+    padding-left: 30px;
+  }
+
+  .skill-item{
+    width: auto;
+    /* height: auto; */
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .roll-stag{
+    transform: none;
+    opacity: 0;
+  }
+
+  .init-details{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 30% 20%;
+    font-size: large;
+    padding-bottom: 50px;
+  }
+
+  .init-details-text{
+    margin-left: 5px;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 30px;
+  }
+
+  .init-details-img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .init-techs-used{
+    grid-row: 3;
+    grid-column: 1;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .init-techs-used> span{
+    font-size: larger;
+  }
+
+  .init-details-img > img{
+    height: auto;
+    width: 100%;
+  }
+
+  .blog.accordion-show, .player.accordion-show, .shop.accordion-show{
+    height: auto;
+  }
+}
