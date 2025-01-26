@@ -41,6 +41,10 @@ $('#btn-proj3').on('click',()=>{
     $('#link-proj3')[0].click();
 });
 
+$('#btn-proj4').on('click',()=>{
+    $('#link-proj4')[0].click();
+});
+
 // jQuery.fn.center = function () {
 //     this.css("position","absolute");
 //     this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 

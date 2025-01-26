@@ -358,6 +358,10 @@ body{
     height: 1695px;
   }
 
+  .petsmanager.accordion-show{
+    height: 1630px;
+  }
+
   .init-details{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -643,7 +647,17 @@ body{
     width: 100%;
   }
 
-  .blog.accordion-show, .player.accordion-show, .shop.accordion-show{
+  .blog.accordion-show, .player.accordion-show, .shop.accordion-show, .petsmanager.accordion-show{
     height: auto;
+  }
+
+  #download-resume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #myImage{
+    height: 450px;
   }
 }
